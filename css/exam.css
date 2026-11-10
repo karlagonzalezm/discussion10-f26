@@ -1,0 +1,21 @@
+/* Name: Karla Gonzalez, GSI: Beck */
+
+.skip {
+    position: absolute;
+    top: -100px;
+}
+
+.gallery {
+    width: 85%;
+    margin: 0 auto;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 24% 24% 24%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    border: 5px solid orange;
+}
