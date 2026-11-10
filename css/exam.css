@@ -17,5 +17,37 @@
 
 .gallery img {
     width: 100%;
-    border: 5px solid orange;
+    border: 5px dashed orange;
+}
+
+@media screen and (min-width: 550px) {
+    .gallery {
+        background-color: white;
+        gap: 5px;
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    .gallery img:nth-child(4n) {
+        grid-column: 1 / -1;
+    }
+
+    .gallery img:nth-child(even) {
+        border: 5px dashed black;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .gallery {
+        background-color: orange;
+        display: grid;
+        grid-template-columns: 18% 18% 18% 18%;
+        padding: 5%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .gallery img:nth-child(odd) {
+        border: 5px solid white;
+    }
 }
